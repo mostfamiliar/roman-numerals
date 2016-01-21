@@ -193,8 +193,9 @@ var fourDigit = function(num) {
 
 $(document).ready(function() {
   $("form#numeralProcess").submit(function(event) {
-    var num = $("input#romanText").val();
-    var result =
+    var num = $("#numberInput").val();
+    var result = masterFunction(num);
+    $("#romanText").text(result);
 
 
     (event).preventDefault();
