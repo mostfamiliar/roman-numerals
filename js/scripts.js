@@ -1,5 +1,25 @@
 // var master = function(num) {
+var masterFunction = function(num) {
+  var arr = changeArr(num);
+  if (arr.length === 1) {
+    var oneDig = oneDigit(num);
+    return oneDig;
+  }
+  else if (arr.length === 2) {
+    var twoDig = twoDigit(num);
+    console.log(twoDig)
+    return twoDig;
+  }
+  else if (arr.length === 3) {
+    var threeDig = threeDigit(num);
+    return threeDig;
+  }
+  else {
+    var fourDig = fourDigit(num);
+    return fourDig;
+  }
 
+};
 
 var changeArr = function(num) {
   var str = num.toString();
@@ -133,12 +153,10 @@ var thousands = function(arr) {
 var oneDigit = function(num) {
 
   var arr = changeArr(num);
-
   var callOnes = ones(arr);
   return callOnes;
 
 }
-
 
 var twoDigit = function(num) {
   var arr = changeArr(num);
@@ -175,6 +193,9 @@ var fourDigit = function(num) {
 
 $(document).ready(function() {
   $("form#numeralProcess").submit(function(event) {
+    var num = $("input#romanText").val();
+    var result =
+
 
     (event).preventDefault();
   })

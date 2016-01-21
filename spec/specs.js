@@ -1,22 +1,36 @@
 describe("oneDigit", function() {
   it("will add the value of the symbols to produce output", function(){
-    expect(oneDigit(9)).to.equal("IX")
+    expect(oneDigit(1)).to.equal("I")
   });
 });
 
 describe("twoDigit", function() {
   it("will add the value of the symbols to produce output", function(){
-    expect(twoDigit(99)).to.equal("XCIX")
+    expect(twoDigit(10)).to.equal("X")
   });
 });
 
 describe("threeDigit", function() {
   it("will add the value of the symbols to produce output", function() {
-    expect(threeDigit(999)).to.equal("CMXCIX")
-  })
-})
+    expect(threeDigit(100)).to.equal("C")
+  });
+});
 describe("fourDigit", function() {
   it("will add the value of the symbols to produce output", function() {
-    expect(fourDigit(3999)).to.equal("MMMCMXCIX")
+    expect(fourDigit(1000)).to.equal("M")
+  });
+});
+describe("masterFunction", function() {
+  it("will add the value of the symbols to produce output", function() {
+    expect(masterFunction(1)).to.equal("I")
+  });
+  it("will add the value of the symbols to produce output", function() {
+    expect(masterFunction(10)).to.equal("X")
+  });
+  it("will add the value of the symbols to produce output", function() {
+    expect(masterFunction(100)).to.equal("C")
+  });
+  it("will add the value of the symbols to produce output", function() {
+    expect(masterFunction(1000)).to.equal("M")
   })
-})
+});
