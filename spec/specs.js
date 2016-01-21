@@ -12,7 +12,7 @@ describe("twoDigit", function() {
 
 describe("threeDigit", function() {
   it("will add the value of the symbols to produce output", function() {
-    expect(threeDigit(324)).to.equal("CCCXXIV")
+    expect(threeDigit(321)).to.equal("CCCXXI")
   })
 })
 describe("fourDigit", function() {
