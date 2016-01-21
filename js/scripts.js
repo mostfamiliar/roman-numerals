@@ -10,93 +10,106 @@ var changeArr = function(num) {
   return arr;
 };
 
+var ones = function(arr) {
+    var i = (arr.length-1);
+    if (true) {
+       if (arr[i] === 1) {
+         var final = "I";
+       } else if (arr[i] === 2) {
+         final = "II";
+       } else if (arr[i] === 3) {
+         final = "III";
+       } else if (arr[i] === 4) {
+         final = "IV";
+       } else if (arr[i] === 5) {
+         final = "V";
+       } else if (arr[i] === 6) {
+         final = "VI";
+       } else if (arr[i] === 7) {
+         final = "VII";
+       } else if (arr[i] === 8) {
+         final = "VIII";
+       } else if (arr[i] === 9) {
+         final = "IX";
+       } else {
+         console.log("error");
+       };
+   };
+     console.log(final)
+     return final;
+};
+
+
+var tens = function(arr) {
+  var i = (arr.length-2);
+  if (true) {
+     if (arr[i] === 1) {
+       var final1 = "X";
+     } else if (arr[i] === 2) {
+       final1 = "XX";
+     } else if (arr[i] === 3) {
+       final1 = "XXX";
+     } else if (arr[i] === 4) {
+       final1 = "XL";
+     } else if (arr[i] === 5) {
+       final1 = "L";
+     } else if (arr[i] === 6) {
+       final1 = "LX";
+     } else if (arr[i] === 7) {
+       final1 = "LXX";
+     } else if (arr[i] === 8) {
+       final1 = "LXXX";
+     } else if (arr[i] === 9) {
+       final1 = "XC";
+     } else {
+       console.log("error");
+     }
+   };
+   return final1;
+};
 
 var oneDigit = function(num) {
 
   var arr = changeArr(num);
 
-  console.log(arr);
-  if (arr.length === 1) {
-     if (arr[0] === 1) {
-       var final = "I";
-     } else if (arr[0] === 2) {
-       final = "II";
-     } else if (arr[0] === 3) {
-       final = "III";
-     } else if (arr[0] === 4) {
-       final = "IV";
-     } else if (arr[0] === 5) {
-       final = "V";
-     } else if (arr[0] === 6) {
-       final = "VI";
-     } else if (arr[0] === 7) {
-       final = "VII";
-     } else if (arr[0] === 8) {
-       final = "VIII";
-     } else if (arr[0] === 9) {
-       final = "IX";
-     }
-   }
- return final;
+  var callOnes = ones(arr);
+  return callOnes;
 
 }
 
 
 var twoDigit = function(num) {
   var arr = changeArr(num);
+  console.log(arr)
+  var callOnes = ones(arr);
+  var callTens = tens(arr);
 
-  console.log(arr);
-  if (arr.length === 2) {
-     if (arr[0] === 1) {
-       var final = "X";
-     } else if (arr[0] === 2) {
-       final = "XX";
-     } else if (arr[0] === 3) {
-       final = "XXX";
-     } else if (arr[0] === 4) {
-       final = "XL";
-     } else if (arr[0] === 5) {
-       final = "L";
-     } else if (arr[0] === 6) {
-       final = "LX";
-     } else if (arr[0] === 7) {
-       final = "LXX";
-     } else if (arr[0] === 8) {
-       final = "LXXX";
-     } else if (arr[0] === 9) {
-       final = "XC";
-     }
+  console.log(callOnes)
 
+    //  if (arr[1] === 1) {
+    //    var final1 = "I";
+    //  } else if (arr[1] === 2) {
+    //    final1 = "II";
+    //  } else if (arr[1] === 3) {
+    //    final1 = "III";
+    //  } else if (arr[1] === 4) {
+    //    final1 = "IV";
+    //  } else if (arr[1] === 5) {
+    //    final1 = "V";
+    //  } else if (arr[1] === 6) {
+    //    final1 = "VI";
+    //  } else if (arr[1] === 7) {
+    //    final1 = "VII";
+    //  } else if (arr[1] === 8) {
+    //    final1 = "VIII";
+    //  } else if (arr[1] === 9) {
+    //    final1 = "IX";
+    //  }
+   return(callTens + callOnes);
 
-     if (arr[1] === 1) {
-       var final1 = "I";
-     } else if (arr[1] === 2) {
-       final1 = "II";
-     } else if (arr[1] === 3) {
-       final1 = "III";
-     } else if (arr[1] === 4) {
-       final1 = "IV";
-     } else if (arr[1] === 5) {
-       final1 = "V";
-     } else if (arr[1] === 6) {
-       final1 = "VI";
-     } else if (arr[1] === 7) {
-       final1 = "VII";
-     } else if (arr[1] === 8) {
-       final1 = "VIII";
-     } else if (arr[1] === 9) {
-       final1 = "IX";
-     }
+};
 
 
-
-
-
-
-   }
-   return(final + final1);
-
-}
 
 var threeDigit = function(num) {
   var arr = changeArr(num);

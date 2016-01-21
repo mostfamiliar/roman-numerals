@@ -1,12 +1,12 @@
 describe("oneDigit", function() {
   it("will add the value of the symbols to produce output", function(){
-    expect(oneDigit(1)).to.equal("I")
+    expect(oneDigit(2)).to.equal("II")
   });
 });
 
 describe("twoDigit", function() {
   it("will add the value of the symbols to produce output", function(){
-    expect(twoDigit(14)).to.equal("XIV")
+    expect(twoDigit(16)).to.equal("XVI")
   });
 });
 
