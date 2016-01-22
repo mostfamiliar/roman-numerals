@@ -1,0 +1,17 @@
+Is the Github documentation - commits and README - thorough and descriptive?
+- No readme! ;'(, all commits well documented.
+
+Is the code easy to read (good indentation, spacing, naming)?
+- Yes, very easy to follow! great layout.
+
+Were branching and looping used effectively?
+- Lots of branching! No looping that we can see...
+
+Is the web page(s) styled using Bootstrap and CSS?
+- Yes! Nice and minimalist.
+
+Is the site user-friendly?
+- Yes!
+
+Do you have any additional constructive criticism or positive feedback to share?
+- Breaks on numbers greater than 3999 in interesting ways.
